@@ -26,7 +26,7 @@ export default function Leaderboard({ myName }) {
 
   return (
     <section className="leaderboard">
-      <h1 className="page-title">Overall leaderboard</h1>
+      <h1 className="page-title">Global leaderboard</h1>
       <div className="tabs" role="tablist">
         {TABS.map(([id, label]) => (
           <button key={id} role="tab" aria-selected={tab === id} className={tab === id ? 'active' : ''} onClick={() => setTab(id)}>{label}</button>
