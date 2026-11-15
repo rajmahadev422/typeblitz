@@ -1,0 +1,11 @@
+{
+  "name": "typeblitz",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "build": "npm --prefix client run build",
+    "start:server": "npm --prefix server start",
+    "start": "npm run build && npm run start:server"
+  }
+}
