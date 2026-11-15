@@ -8,6 +8,8 @@ Real-time typing races. React (Vite) + Node.js (Express, Socket.IO).
 - **Leaderboards**: overall (best speed, average speed, most wins) and a per-room leaderboard that accumulates points across rounds.
 - Light and dark themes, responsive layout, animated speedometer, racers, caret, countdown and confetti.
 
+<img width="1843" height="957" alt="image" src="https://github.com/user-attachments/assets/1aaace79-bc17-4977-ba68-86f6822ccc57" />
+
 ## Run it
 
 ```bash
