@@ -1,5 +1,6 @@
 {
   "name": "typeblitz",
+  "description": "Typeblitz is a free typing speed game with online players and play with friends.",
   "private": true,
   "version": "1.0.0",
   "scripts": {
