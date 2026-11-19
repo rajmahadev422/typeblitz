@@ -8,30 +8,9 @@ Real-time typing races. React (Vite) + Node.js (Express, Socket.IO).
 - **Leaderboards**: overall (best speed, average speed, most wins) and a per-room leaderboard that accumulates points across rounds.
 - Light and dark themes, responsive layout, animated speedometer, racers, caret, countdown and confetti.
 
-<<<<<<< HEAD
-## Run it
 
-```bash
-npm run install:all     # installs root, server and client
-npm run dev             # server on :4000, client on :5173
-```
-
-Open http://localhost:5173. To try a global race alone, open two tabs.
-
-To test on your phone, open `http://<your-computer-LAN-IP>:5173` (the dev server is exposed on your network). The room QR code encodes a join link, so the phone's normal camera app can scan it.
-
-## Production
-
-```bash
-npm run build           # builds client/dist
-npm start               # server serves API, sockets and the built client on :4000
-```
-
-Env vars: `PORT` (default 4000), `CLIENT_ORIGIN` (CORS origin if the client is hosted separately), `VITE_SERVER_URL` (client build-time, if the API is on another domain).
-=======
 <img width="1843" height="957" alt="image" src="https://github.com/user-attachments/assets/1aaace79-bc17-4977-ba68-86f6822ccc57" />
 <img width="1841" height="938" alt="image" src="https://github.com/user-attachments/assets/71e6a98c-c4ef-4e16-b51f-be62ae63cbf3" />
->>>>>>> 6e2898c5c565149d32239e5a2455bb752751d5ef
 
 ## Notes
 
@@ -41,9 +20,3 @@ Env vars: `PORT` (default 4000), `CLIENT_ORIGIN` (CORS origin if the client is h
 - The server computes WPM itself, rejects impossible progress jumps, and does not save results above 250 WPM.
 - Add paragraphs in `server/texts.js`.
 
-## Structure
-
-```
-server/   index.js (rooms, matchmaking, race loop)  store.js (leaderboard)  texts.js
-client/   src/App.jsx  src/styles.css  src/components/*
-```
