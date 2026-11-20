@@ -2,7 +2,8 @@ name: Keep Website Alive
 
 on:
   schedule:
-    - cron: "*/10 * * * *"  # every 10 minutes
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
 
 jobs:
   ping:
@@ -11,4 +12,4 @@ jobs:
     steps:
       - name: Ping Website
         run: |
-          curl https://typeblitz-qpeu.onrender.com
+          curl -f -sS --retry 3 --retry-delay 5 https://your-website.com
